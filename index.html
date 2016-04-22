@@ -4,23 +4,60 @@
 	<title>This is a test</title>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<style>
+		div {
+			width: 50%;
+			float: left;
+		}
+		h1 {
+			color: blue;
+		}
+		p {
+			margin-top: 50px;
+			font-style: none;
+		}
+		p, ul, ol {
+			color: green;
+		}
 		img {
 			max-width: 100%;
+		}
+		#heading {
+			font-size: 50px;
+		}
+
+		.paragraph {
+			font-style: italic;
+		}
+
+		p.paragraph.introduction.featured {
+			padding-left: 20px;
+		}
+
+		div ul li {
+			background-color: #ff3;
 		}
 	</style>
 </head>
 <body>
-	<div>
-		<h1>This is an amazing page</h1>
+	<h1 id="heading">This is an amazing page</h1>
+	<div class = "left">
 		<!-- This is a paragraph -->
-		<p>Lorem ipsum ajsdfklasjdflbjbdfvxfekwjrewidfjvxcba jsaf asdfj avbxcfsadk fsf xcvja fjdsf sddf sdkffasdlkjf asansjsfa sdfjklfdvjeufh</p>
+		<p class="paragraph introduction featured">Lorem ipsum ajsdfklasjdflbjbdfvxfek wjrewidfjvxcba jsaf asdfj avbxcfsadk fsf xcvja fjdsf sddf sdkffasdlkjf asansjsfa sdfjklfdvjeufh</p>
+		<p class="paragraph">asdfjasldkfba asdfbajsdf absdjf a;sdf asjdfb ;asdfsdklfjfkri vcxivfublk nvlk adfnjgi </p>
+	</div>
+	<div>	
 		<ul>
 			<li>Number One</li>
 			<li>Number Two</li>
 			<li>Number Three</li>
 		</ul>
+		<ol>
+			<li>Number One</li>
+			<li>Number Two</li>
+			<li>Number Three</li>
+		</ol>
 	</div>
-	<div>
+	<div class = "right">
 		<img src="sparta.jpg">
 	</div>
 </body>
